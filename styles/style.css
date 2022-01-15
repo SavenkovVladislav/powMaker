@@ -1,0 +1,8 @@
+.child {
+    display: inline;
+    padding: 8px;
+    margin: 2px;
+    font-size: 16px;
+    border: 2px solid #FEDD00;
+    border-radius: 4px;
+}
