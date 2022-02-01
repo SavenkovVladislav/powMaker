@@ -13,13 +13,13 @@ function getResult() {
         return;
     }
 
-    let p = document.createElement('p'); //Создаёт новый элемент с заданным тегом
+    let p = document.createElement('p'); //Создаёт новый элемент с заданным тегом каждый раз, когда вызывается функция
 
     p.classList.add('child'); //Метод add объекта classList позволяет добавлять CSS классы элементу. Добавили класс child 
 
     p.innerHTML = getDegree(a, b); //Свойство innerHTML позволяет получить и изменить текст элемента. В созданные параграфы записываем результат функции getDegree с ранее заданными a и b
 
-    result.appendChild(p); //Метод appendChild позволяет вставить в конец родительского элемента другой элемент. родитель.appendChild(элемент)
+    result.appendChild(p); //Метод appendChild позволяет вставить в конец родительского элемента другой элемент. родитель.appendChild(элемент). Т.е. помещаем созданные елементы в родителя result
 }
 
 function getDegree(number, degree) {
